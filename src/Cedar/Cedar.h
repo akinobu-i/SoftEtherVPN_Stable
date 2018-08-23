@@ -148,12 +148,12 @@
 
 // Specify the name of the person in charge building
 #ifndef	BUILDER_NAME
-#define	BUILDER_NAME		"yagi"
+#define	BUILDER_NAME		"akinobu-i"
 #endif	// BUILDER_NAME
 
 // Specify the location to build
 #ifndef	BUILD_PLACE
-#define	BUILD_PLACE			"pc33"
+#define	BUILD_PLACE			"mypc"
 #endif	// BUILD_PLACE
 
 // Specifies the build date
@@ -1043,8 +1043,8 @@ typedef struct CEDAR
 	char CurrentDDnsFqdn[MAX_SIZE];	// FQDN of the current DDNS
 	char OpenVPNPublicPorts[MAX_SIZE];	// OpenVPN public UDP port list
 	LOCK *OpenVPNPublicPortsLock;	// Lock of OpenVPN public UDP port list
-	LOCK *CurrentRegionLock;		// Current region lock
-	char CurrentRegion[128];		// Current region
+//	LOCK *CurrentRegionLock;		// Current region lock
+//	char CurrentRegion[128];		// Current region
 	LOCK *CurrentTcpQueueSizeLock;	// Current TCP send queue size lock
 	UINT CurrentTcpQueueSize;		// Current TCP send queue size
 	COUNTER *CurrentActiveLinks;	// Current active cascade connections
